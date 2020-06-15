@@ -7,4 +7,5 @@ run:
   args:
   - -c
   - |
-      echo ((some-var))
+      echo ((some-var-from-vault))
+      echo ((some-var-from-task))
