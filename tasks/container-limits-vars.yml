@@ -1,7 +1,7 @@
 platform: linux
 container_limits:
   cpu: 1024
-  memory: "1gb"
+  memory: ((container_mem_limit))
 image_resource:
   type: registry-image
   source: {repository: busybox}
