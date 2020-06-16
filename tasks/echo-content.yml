@@ -1,0 +1,12 @@
+platform: linux
+image_resource:
+  type: registry-image
+  source: {repository: busybox}
+params:
+  CONTENT: ((content))
+run:
+  path: sh
+  args:
+  - -c
+  - |
+      echo $CONTENT
