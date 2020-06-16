@@ -4,9 +4,11 @@ image_resource:
   source: {repository: busybox}
 params:
   CONTENT: ((content))
+  LOCAL_CONTENT: ((.:some-var-from-file.params.CONTENT))
 run:
   path: sh
   args:
   - -c
   - |
       echo $CONTENT
+      echo $LOCAL_CONTENT
