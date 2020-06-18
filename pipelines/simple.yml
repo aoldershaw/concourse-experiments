@@ -1,0 +1,12 @@
+jobs:
+- name: job
+  plan:
+  - task: echo
+    config:
+      platform: linux
+      image_resource:
+        type: registry-image
+        source: {repository: busybox}
+      run:
+        path: echo
+        args: [hi]
