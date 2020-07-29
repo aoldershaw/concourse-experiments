@@ -7,5 +7,5 @@ run:
   args:
   - -c
   - |
-      echo ((var1))
-      echo ((var2))
+      echo ((!var1))
+      echo ((!var2))
