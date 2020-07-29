@@ -7,5 +7,5 @@ run:
   args:
   - -c
   - |
-      echo ((some-var-from-vault))
-      echo ((some-var-from-task))
+      echo (("var.one"))
+      echo (("var.two".sub1.sub2))
