@@ -1,9 +1,3 @@
-resources:
-- name: repo
-  type: git
-  source:
-    uri: https://github.com/aoldershaw/concourse-experiments.git
-
 jobs:
 - name: job
   plan:
